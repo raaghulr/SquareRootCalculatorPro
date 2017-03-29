@@ -25,10 +25,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void squareCalculator (View view)
     {
-        var_store = new Double(String.valueOf(et_getvalue.getText()));
+
+        if (et_getvalue.getText().toString().trim().length() == 0) {
+            Toast.makeText(this, "Enter a Number!!!", Toast.LENGTH_SHORT).show();
+            var_store = 0 ;
+        }
+        else
+            var_store = new Double(String.valueOf(et_getvalue.getText()));
         result_store = Math.sqrt(var_store);
         tv_resultvalue.setText((new String(String.valueOf(result_store))));
-        Toast.makeText(this, new String("Square Root Value For \nNumber : "+var_store+"  is "+String.valueOf(result_store)), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, new String("Square Root Value For \nNumber : "+var_store+"  is "+String.valueOf(result_store)), Toast.LENGTH_SHORT).show();
     }
 
     public void clearValue(View view)
