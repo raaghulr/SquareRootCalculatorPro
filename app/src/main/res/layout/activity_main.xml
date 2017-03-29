@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.raaghulr.rr.squarerootcalculatorpro.MainActivity">
 
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="clearValue"
+        android:text="@string/clear"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resultvalue"
+        app:layout_constraintDimensionRatio="w,3:1" />
+
     <TextView
         android:id="@+id/tv_appname"
         android:layout_width="wrap_content"
@@ -82,16 +95,16 @@
 
     <Button
         android:id="@+id/btn_calculate"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="25dp"
         android:background="@android:color/holo_green_light"
         android:onClick="squareCalculator"
         android:text="@string/calculate"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_resultvalue" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_resultvalue"
+        app:layout_constraintRight_toLeftOf="@+id/btn_clear"
+        android:layout_marginRight="8dp" />
 
 </android.support.constraint.ConstraintLayout>

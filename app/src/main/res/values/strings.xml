@@ -5,4 +5,5 @@
     <string name="number">NUMBER</string>
     <string name="result">RESULT</string>
     <string name="calculate">CALCULATE</string>
+    <string name="clear">CLEAR</string>
 </resources>

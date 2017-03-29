@@ -31,5 +31,10 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, new String("Square Root Value For \nNumber : "+var_store+"  is "+String.valueOf(result_store)), Toast.LENGTH_LONG).show();
     }
 
-
+    public void clearValue(View view)
+    {
+        et_getvalue.setText("");
+        tv_resultvalue.setText("Answer");
+        Toast.makeText(this, "Value Cleared!!!", Toast.LENGTH_SHORT).show();
+    }
 }
